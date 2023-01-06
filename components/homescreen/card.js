@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native';
 
-function Card() {
+function Card({item}) {
     return (
         <View style={styles.wrapper}>
-            <Text>Home!</Text>
+            <Text>{item.name}</Text>
         </View>
     );
 }
@@ -12,7 +12,8 @@ function Card() {
 const styles = StyleSheet.create({
     wrapper: {
         padding: 24,
-        backgroundColor: "#eaeaea"
+        backgroundColor: "#eaeaea",
+        margin:8
     },
 });
 
